@@ -53,9 +53,11 @@
 6. В качестве ответа повторить sql-запрос и приложите скриншот с данного сервера, bash-скрипт и ссылку на fork-репозиторий.
 
 ### <div style="text-align: center;">Решение</div>
->по пункту 1
-![localImage](./screen_5.4.1.png)
->по пунктам 2-4
+>по пункту 1    
+![localImage](./screen_5.4.1.png)  
+>по пунктам 2-3           
+![localImage](./screen_5.4.2-4.png)
+>по пунктy 4           
 ![localImage](./screen_5.4.2-4.png)
 ```
 Ссылка на репозиторий: git@github.com:PersIlya/shvirtd-example-python.git
