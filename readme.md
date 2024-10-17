@@ -56,9 +56,9 @@
 >по пункту 1    
 ![localImage](./screen_5.4.1.png)  
 >по пунктам 2-3           
-![localImage](./screen_5.4.2-4.png)
+![localImage](./screen_5.4.2-3.png)
 >по пунктy 4           
-![localImage](./screen_5.4.2-4.png)
+![localImage](./screen_5.4.4.png)
 ```
 Ссылка на репозиторий: git@github.com:PersIlya/shvirtd-example-python.git
 ```
