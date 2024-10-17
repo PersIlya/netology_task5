@@ -13,9 +13,7 @@
 
 
 ### <div style="text-align: center;">Решение</div>
-```html
-https://hub.docker.com/repository/docker/personil/my_build_nginx/general
-```
+>по пунктам 1-2: снимки экрана представлены в задании 3.
 ![localImage](./Yes.png)
 
 ## Задача 2 (*)
@@ -25,9 +23,7 @@ https://hub.docker.com/repository/docker/personil/my_build_nginx/general
 4. Просканировать образ на уязвимости.
 В качестве ответа приложите отчет сканирования.
 
-### <div style="text-align: center;">Решение</div>
-![localImage](./)
-![localImage](./Yes.png)
+![localImage](./NotMain.png)
 
 
 ## Задача 3
@@ -41,8 +37,10 @@ https://hub.docker.com/repository/docker/personil/my_build_nginx/general
 6. Остановить проект. В качестве ответа приложите скриншот sql-запроса.
 
 ### <div style="text-align: center;">Решение</div>
->по пунктам 11-12
-![localImage](./ )
+>по пунктам 1-3
+![localImage](./screen_5.3.3.png)
+>по пунктам 4-5
+![localImage](./screen_5.3.5.png)
 ![localImage](./Yes.png)
 
 ## Задача 4
@@ -50,41 +48,42 @@ https://hub.docker.com/repository/docker/personil/my_build_nginx/general
 1. Запустить в Yandex Cloud ВМ (вам хватит 2 Гб Ram).
 2. Подключится к Вм по ssh и установите docker.
 3. Написать bash-скрипт, который скачает ваш fork-репозиторий в каталог /opt и запустит проект целиком.
-4. Зайди на сайт проверки http подключений, например(или аналогичный): https://check-host.net/check-http и запустите проверку вашего сервиса http://<внешний_IP-адрес_вашей_ВМ>:8090. Таким образом трафик будет направлен в ingress-proxy. ПРИМЕЧАНИЕ: приложение(old_main.py) весьма вероятно упадет под нагрузкой, но успеет обработать часть запросов - этого достаточно. Обновленная версия (main.py) не прошла достаточного тестирования временем, но должна справиться с нагрузкой.
-5. (Необязательная часть) Дополнительно настроить remote ssh context к вашему серверу. Отобразите список контекстов и результат удаленного выполнения docker ps -a
+4. Зайти на сайт проверки http подключений, например(или аналогичный): https://check-host.net/check-http и запустите проверку вашего сервиса http://<внешний_IP-адрес_вашей_ВМ>:8090. Таким образом трафик будет направлен в ingress-proxy. ПРИМЕЧАНИЕ: приложение(old_main.py) весьма вероятно упадет под нагрузкой, но успеет обработать часть запросов - этого достаточно. Обновленная версия (main.py) не прошла достаточного тестирования временем, но должна справиться с нагрузкой.
+5. (*) Дополнительно настроить remote ssh context к вашему серверу. Отобразите список контекстов и результат удаленного выполнения docker ps -a
 6. В качестве ответа повторить sql-запрос и приложите скриншот с данного сервера, bash-скрипт и ссылку на fork-репозиторий.
 
 ### <div style="text-align: center;">Решение</div>
-![localImage](./)
+>по пункту 1
+![localImage](./screen_5.4.1.png)
+>по пунктам 2-4
+![localImage](./screen_5.4.2-4.png)
+```
+Ссылка на репозиторий: git@github.com:PersIlya/shvirtd-example-python.git
+```
 ![localImage](./Yes.png)
 
 ## Задача 5 (*)
 1. Написать и задеплоить на облачную ВМ bash скрипт, который произведет резервное копирование БД mysql в директорию "/opt/backup" с помощью запуска в сети "backend" контейнера из образа schnitzler/mysqldump при помощи docker run ... команды. Подсказка: "документация образа."
 2. Протестировать ручной запуск
 3. Настроить выполнение скрипта раз в 1 минуту через cron, crontab или systemctl timer. Придумайте способ не светить логин/пароль в git!!
-4. Предоставить скрипт, cron-task и скриншот с несколькими резервными копиями в "/opt/backup"
-
-### <div style="text-align: center;">Решение</div>
->по пункту 5
-![localImage](./)
-![localImage](./Yes.png)
+4. Предоставить скрипт, cron-task и скриншот с несколькими резервными копиями в "/opt/backup"  
+   
+![localImage](./NotMain.png)
 
 ## Задача 6 
-1. Скачать docker образ hashicorp/terraform:latest и скопировать бинарный файл /bin/terraform на свою локальную машину, используя dive и docker save.  
-2. Добится аналогичного результата, используя docker cp.
-3. Предложить способ извлечь файл из контейнера, используя только команду docker build и любой Dockerfile.
+0. Скачать docker образ hashicorp/terraform:latest и скопировать бинарный файл /bin/terraform на свою локальную машину, используя dive и docker save.  
+1. Добится аналогичного результата, используя docker cp.
+2. (*) Предложить способ извлечь файл из контейнера, используя только команду docker build и любой Dockerfile.
 Предоставьте скриншоты действий.
 
 ### <div style="text-align: center;">Решение</div>
->по пункту 5
-![localImage](./)
+>по пункту 0
+![localImage](./screen_5.6.1.png)
+>по пункту 1
+![localImage](./screen_5.6.2.png)
 ![localImage](./Yes.png)
 
 ## Задача 7 (*)
 Запустить ваше python-приложение с помощью runC, не используя docker или containerd.
 Предоставьте скриншоты действий.
-
-### <div style="text-align: center;">Решение</div>
->по пункту 5
-![localImage](./)
-![localImage](./Yes.png)
+![localImage](./NotMain.png)
