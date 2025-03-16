@@ -1,5 +1,5 @@
 ## <p style="text-align: center;">ОТЧЕТ</p> <p style="text-align: center;">по домашнему заданию к занятию 5 «Практическое применение Docker»</p>
-## <p style="text-align: right;">Выполнил: студент Порсев И.С.</p>
+## <p style="text-align: right;">Выполнил: студент ___________.</p>
 
 Состав виртуального стенда в рамках домашнего задания: \
 ![localImage](./diagram.png)
